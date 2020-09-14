@@ -81,8 +81,9 @@ const generateOverride = (params) => {
       font-family: '${params.fontFamily}';
       src: url('${cdn}/media/fonts/${params.fontFamily}.ttf');
     }
-    * {
-        font-family: '${params.fontFamily}';
+    * { 
+        // 首先保证数学符号显示正确
+        font-family: 'KaTeX_Main''${params.fontFamily}','Rosario', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
     }`
   }
 
